@@ -13,7 +13,7 @@ func TestTemplate(t *testing.T) {
 
 	for _, c := range tests {
 		if result := solution(c.input); result != c.expect {
-			t.Fatalf("solution(%v, %v) fails.\nExpected %v\nReceived %v", c.input, c.expect, result)
+			t.Fatalf("solution(%v) fails.\nExpected %v\nReceived %v", c.input, c.expect, result)
 		}
 	}
 }
