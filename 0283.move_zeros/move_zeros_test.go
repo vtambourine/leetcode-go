@@ -10,7 +10,7 @@ type test struct {
 	expect []int
 }
 
-func TestTemplate(t *testing.T) {
+func TestMoveZeroes(t *testing.T) {
 	tests := []test{
 		{[]int{0, 1, 0, 3, 12}, []int{1, 3, 12, 0, 0}},
 		{[]int{0, 1, 0, 3, 0, 12}, []int{1, 3, 12, 0, 0, 0}},
