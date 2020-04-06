@@ -7,7 +7,7 @@ type test struct {
 	expect int
 }
 
-func TestTemplate(t *testing.T) {
+func TestMaxSubArray(t *testing.T) {
 	tests := []test{
 		{[]int{-2, 1, -3, 4, -1, 2, 1, -5, 4}, 6},
 		{[]int{1, 2, 3, 4}, 10},
