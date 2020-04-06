@@ -7,7 +7,7 @@ type test struct {
 	expect bool
 }
 
-func TestTemplate(t *testing.T) {
+func TestIsHappy(t *testing.T) {
 	tests := []test{
 		{19, true},
 		{82, true},
