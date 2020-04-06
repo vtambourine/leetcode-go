@@ -7,7 +7,7 @@ type test struct {
 	expect int
 }
 
-func TestTemplate(t *testing.T) {
+func TestMaxProfit(t *testing.T) {
 	tests := []test{
 		{[]int{7, 1, 5, 3, 6, 4}, 7},
 		{[]int{1, 2, 3, 4, 5}, 4},
