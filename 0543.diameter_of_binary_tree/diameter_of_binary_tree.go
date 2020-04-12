@@ -13,19 +13,18 @@ func max(a, b int) int {
 	return b
 }
 
-func height(root *TreeNode) int {
+func depth(root *TreeNode, d *int) int {
 	if root == nil {
 		return 0
 	}
-	return 1 + max(height(root.Left), height(root.Right))
+	l := depth(root.Left, d)
+	r := depth(root.Right, d)
+	*d = max(*d, l+r+1)
+	return max(l, r) + 1
 }
 
 func diameterOfBinaryTree(root *TreeNode) int {
-	if root == nil {
-		return 0
-	}
-	return max(
-		height(root.Left)+height(root.Right),
-		max(diameterOfBinaryTree(root.Left), diameterOfBinaryTree(root.Right)),
-	)
+	d := 1
+	depth(root, &d)
+	return d - 1
 }
