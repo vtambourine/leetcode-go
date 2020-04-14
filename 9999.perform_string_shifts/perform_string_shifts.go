@@ -6,7 +6,7 @@ func shiftOnce(arr *[]byte, shift []int) {
 	amount %= length
 	if direction == 0 {
 		*arr = append((*arr)[amount:], (*arr)[:amount]...)
-	} else if direction == 1 {
+	} else {
 		*arr = append((*arr)[length-amount:], (*arr)[:length-amount]...)
 	}
 }
