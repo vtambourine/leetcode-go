@@ -7,7 +7,7 @@ type test struct {
 	expect int
 }
 
-func TestTemplate(t *testing.T) {
+func TestFindMaxLength(t *testing.T) {
 	tests := []test{
 		{[]int{0, 1}, 2},
 		{[]int{0, 1, 0}, 2},
