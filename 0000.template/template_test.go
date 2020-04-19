@@ -8,8 +8,7 @@ type test struct {
 }
 
 func TestTemplate(t *testing.T) {
-	tests := []test{
-	}
+	tests := []test{}
 
 	for _, c := range tests {
 		if result := solution(c.input); result != c.expect {
