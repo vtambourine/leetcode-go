@@ -1,15 +1,13 @@
 package subarray_sum_equals_k
 
 func subarraySum(nums []int, k int) int {
-	sum := 0
-	for i := 0; i < len(nums); i++ {
-		sum := 0
-		for j := i; j < len(nums); j++ {
-			sum += nums[j]
-			if sum == k {
-				sum++
-			}
-		}
+	var answer, sum int
+	hash := make(map[int]int)
+	hash[0] = 1
+	for _, n := range nums {
+		sum += n
+		answer += hash[sum-k]
+		hash[sum]++
 	}
-	return sum
+	return answer
 }

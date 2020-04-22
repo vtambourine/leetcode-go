@@ -13,6 +13,7 @@ func TestSubarraySum(t *testing.T) {
 		{[]int{1, 1, 1}, 2, 2},
 		{[]int{1, 1, 1, 1}, 2, 3},
 		{[]int{1, -1, 1, -1, 1}, 0, 6},
+		{[]int{1, 2, 3}, 3, 2},
 	}
 
 	for _, c := range tests {
