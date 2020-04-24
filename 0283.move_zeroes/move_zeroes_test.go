@@ -1,4 +1,4 @@
-package move_zeros
+package move_zeroes
 
 import (
 	"reflect"
