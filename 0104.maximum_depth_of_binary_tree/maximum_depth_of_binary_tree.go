@@ -15,7 +15,7 @@ func max(a, b int) int {
 
 func nodeDepth(node *TreeNode, depth int) int {
 	if node.Left == nil && node.Right == nil {
-		return depth + 1
+		return depth
 	}
 
 	var leftDepth, rightDepth int
@@ -23,7 +23,7 @@ func nodeDepth(node *TreeNode, depth int) int {
 		leftDepth = nodeDepth(node.Left, depth + 1)
 	}
 	if node.Right !=nil {
-		rightDepth = nodeDepth(node.Right, depth + 1)
+		rightDepth = nodeDepth(node.Right, depth + 1);
 	}
 
 	return max(leftDepth, rightDepth)
